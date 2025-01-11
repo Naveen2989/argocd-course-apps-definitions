@@ -13,9 +13,9 @@ spec:
     repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
     targetRevision: master
     kustomize:
-      namePrefix: staging-
+      namePrefix: production-
       commonLabels:
-        app: demo
+        app: finance-app
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
